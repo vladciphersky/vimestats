@@ -1,0 +1,7 @@
+{
+    "tokens": {
+        "discord": "paste discord bot token",
+        "vime": "paste vimeworld api token"
+    },
+    "prefix": "!"
+}
