@@ -1,3 +1,10 @@
+/*
+
+Внимание! Данная команда отключена для использования, и имеет код из ping.js
+Вы можете написать для неё код, и сделать Pull Request. Я даже буду рад этому. :)
+
+*/
+
 module.exports = class extends Discord.Command {
     get options() {
         return {
