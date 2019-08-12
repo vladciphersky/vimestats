@@ -10,7 +10,7 @@ Discord бот для проверки статистики с VimeWorld
 
 ## TODO
 - `guild <id/tag/name> <запрос>` | Статистика гильдии
-В принципе, метод в utils/vimeworld.js есть, можете сделать Pull Request
+<br>В принципе, метод в utils/vimeworld.js есть, можете сделать Pull Request
 
 ## Небольшое уведомление
 Дизайн команд (`staff`, `stats`, `streams`) похож (частично) на тот, что у бота от VimeTop. Я пытаюсь скопировать его, и добавить в него новые функции. А также я даю Open Source. :D
