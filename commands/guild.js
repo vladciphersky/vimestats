@@ -26,7 +26,7 @@ module.exports = class extends Discord.Command {
                 });
 
                 vime.getProfile(sortedLNick).then(user => {
-                    var leader = vime.returnPrefix(user[0].rank) + user[0].username;
+                    var leader = `\`${vime.returnPrefix(user[0].rank) + user[0].username}\``;
                     embed.addField("Информация", `ID: ${guild.id}\nУровень: ${guild.level} [${Math.round(guild.levelPercentage * 100)}%]\nВложено в гильдию: ${guild.totalCoins} <:vw_coins:610677696329940997>\nДата создания: ${vime.guildCreated(Number(guild.created + String("000")))}\nУчастников: ${guild.members.length}\n${leader} - Лидер`);
                     
                     embed.addField("Перки", `${guild.perks["MEMBERS"].name}: ${guild.perks["MEMBERS"].level} уровень\n${guild.perks["COINS"].name}: ${guild.perks["COINS"].level} уровень\n${guild.perks["PARTY"].name}: ${guild.perks["PARTY"].level} уровень\n${guild.perks["MOTD"].name}: ${guild.perks["MOTD"].level} уровень\n${guild.perks["COINS_MULT"].name}: ${guild.perks["COINS_MULT"].level} уровень\n${guild.perks["TAG"].name}: ${guild.perks["TAG"].level} уровень\n${guild.perks["COLOR"].name}: ${guild.perks["COLOR"].level} уровень\n${guild.perks["GUILD_WAR"].name}: ${guild.perks["GUILD_WAR"].level} уровень`);
