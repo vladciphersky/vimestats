@@ -16,6 +16,7 @@ var rank = {
 	ADMIN: {rank: "Главный админ", prefix: "[Гл. Админ] ", color: "00bebe"}
 };
 
+var guildColors = require('./guildColors');
 var request = require('request-promise-native');
 const hostname = "https://api.vime.world";
 
@@ -42,8 +43,16 @@ module.exports = function (token) {
 		return rank[thisRank].color;
 	};
 
+	this.returnGuildColor = (thisColor) => {
+		return guildColors[thisColor];
+	};
+
 	this.played = (ms) => {
 		return moment.duration(ms).format("D [дн.] h [ч.] m [мин.] s [сек.]");
+	};
+
+	this.guildCreated = (date) => {
+		return moment(date).locale('ru').format('LLL');
 	};
 
 	this.getNoun = (number, one, two, five) => {
@@ -84,8 +93,8 @@ module.exports = function (token) {
 
 	this.getGuild = (queryType, query) => {
 		if(!queryType || !query) return console.error("❌ Ошибка в работе библиотеки VimeWorld | Недостаточно аргументов");
-        return request(
-			options(`/guild/get?${queryType}=${query}`, token)
+		return request(
+			options(`/guild/get?${queryType}=${query}`)
 		).then((r) => r, (e) => console.error("❌ Ошибка в работе библиотеки VimeWorld | ", e));
 	};
 	
