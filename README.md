@@ -16,7 +16,7 @@ Discord бот для проверки статистики с VimeWorld
 Дизайн команд (`staff`, `stats`, `streams`) похож (частично) на тот, что у бота от VimeTop. Я пытаюсь скопировать его, и добавить в него новые функции. А также я даю Open Source. :D
 
 ## Библиотеки которые использовались при создании бота
-- `discore.js`(DiscordJS, только сделан немного по-другому)
+- [`discore.js`](https://github.com/zargovv/discore.js) (Based on [DiscordJS](https://github.com/discordjs/discord.js))
 - `moment`
 - `moment-duration-format`
 - `request-promise-native`
