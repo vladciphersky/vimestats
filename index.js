@@ -8,7 +8,6 @@ require('moment-duration-format');
 
 global.Discord = require('discore.js');
 new Discord.Core({
-  typing: true,
   eventsFolder: 'events',
   commandsFolder: 'commands',
   token: config.tokens.discord,
