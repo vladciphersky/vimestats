@@ -1,5 +1,6 @@
 # VimeStats
 Discord бот для проверки статистики с VimeWorld
+# НЕ ПУТАТЬ С [ПРОЕКТОМ](https://github.com/vimestats) ОТ [@runic-tears](https://github.com/runic-tears)
 
 ## Команды бота
 - `help` | Помощь по командам
